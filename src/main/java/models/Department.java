@@ -33,7 +33,7 @@ public class Department {
         this.title = title;
     }
 
-    @OneToOne(mappedBy = "manager", fetch = FetchType.LAZY)
+    @OneToOne(mappedBy = "department", fetch = FetchType.LAZY)
     public Manager getManager() {
         return manager;
     }
