@@ -1,5 +1,7 @@
 package models;
 
+import db.IDB;
+
 import javax.persistence.*;
 
 @Entity

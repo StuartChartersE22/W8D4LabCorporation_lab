@@ -1,12 +1,14 @@
 package models;
 
+import db.IDB;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "employees")
 @Inheritance(strategy = InheritanceType.JOINED)
 @DiscriminatorColumn(name = "employee_type")
-public abstract class Employee {
+public abstract class Employee implements IDB {
 
     private int id;
     private String name;

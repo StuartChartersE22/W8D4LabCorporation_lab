@@ -1,5 +1,6 @@
 package models;
 
+import db.IDB;
 import db.Manageable;
 
 import javax.persistence.Entity;
