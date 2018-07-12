@@ -1,6 +1,15 @@
 package models;
 
-public class Administrator extends Employee{
+import db.Manageable;
+
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "administrators")
+public class Administrator extends Employee implements Manageable {
     private Manager manager;
 
 
@@ -9,6 +18,8 @@ public class Administrator extends Employee{
         this.manager = manager;
     }
 
+    @ManyToOne
+    @JoinColumn(name = "manager_id", nullable = false)
     public Manager getManager() {
         return manager;
     }
