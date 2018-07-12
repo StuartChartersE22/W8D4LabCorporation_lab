@@ -1,7 +1,5 @@
 package models;
 
-import db.Manageable;
-
 import javax.persistence.*;
 import java.util.List;
 
@@ -11,7 +9,9 @@ public class Manager extends Employee {
 
     private double budget;
     private Department department;
-    private List<Administrator> administrators;
+//    private List<Administrator> administrators;
+
+    public Manager(){}
 
     public Manager(String name, String ni, double salary, double budget, Department department){
         super(name, ni, salary);
@@ -38,12 +38,11 @@ public class Manager extends Employee {
         this.department = department;
     }
 
-    @OneToMany(mappedBy = "manager", fetch = FetchType.LAZY)
-    public List<Administrator> getAdministrators() {
-        return administrators;
-    }
-
-    public void setAdministrators(List<Administrator> administrators) {
-        this.administrators = administrators;
-    }
+//    @OneToMany(mappedBy = "manager", fetch = FetchType.LAZY)
+//    public List<Administrator> getAdministrators() {
+//        return administrators;
+//    }
+//    public void setAdministrators(List<Administrator> administrators) {
+//        this.administrators = administrators;
+//    }
 }

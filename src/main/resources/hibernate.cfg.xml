@@ -18,6 +18,8 @@
         <mapping class = "models.Department"/>
         <mapping class = "models.Administrator"/>
         <mapping class = "models.Manager"/>
+        <mapping class = "models.CEO"/>
+        <mapping class = "models.Worker"/>
 
     </session-factory>
 </hibernate-configuration>

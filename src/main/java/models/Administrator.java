@@ -12,6 +12,7 @@ import javax.persistence.Table;
 public class Administrator extends Employee implements Manageable {
     private Manager manager;
 
+    public Administrator(){}
 
     public Administrator(String name, String ni, double salary, Manager manager){
         super(name, ni, salary);

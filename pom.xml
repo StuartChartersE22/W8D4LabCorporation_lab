@@ -35,6 +35,11 @@
             <version>3.12.1.GA</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections</artifactId>
+            <version>0.9.11</version>
+        </dependency>
 
     </dependencies>
 
